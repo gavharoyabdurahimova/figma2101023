@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(240, 2%, 88%);
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  margin: 0 auto;
+  border-radius: 10px 10px;
+  margin-top: 100px;
+}
+.cards .desctop {
+  display: none;
+}
+.cards .mobile {
+  max-width: 343px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card_product {
+  max-width: 343px;
+  background-color: white;
+  /* padding-top: 24px; */
+  padding: 29px 23px;
+}
+.card_product h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 135.023%;
+  letter-spacing: 5.16px;
+  /* margin-top: 24px; */
+}
+.card_product h1 {
+  color: #000;
+  font-family: "Young Serif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+.card_product .text1 {
+  color: #8d8e93;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 161%;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+.card_product .text2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8d8e93;
+  margin-bottom: 20px;
+}
+.card_product .line {
+  color: #3d8168;
+  /* font-family: "Young Serif", serif; */
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.card_product button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 161%;
+  border-radius: 7px;
+  background: #3d8168;
+  padding: 15px 77px;
+}
+@media screen and (min-width: 900px) {
+  .cards .desctop {
+    display: block;
+    max-width: 300px;
+  }
+  .cards .mobile {
+    display: none;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .card_product button {
+    padding: 24px 76px;
+    width: 285px;
+  }
+  .card_product .text2 {
+    margin-bottom: 29px;
+  }
+
+  .card_product .text1 {
+    margin-bottom: 24px;
+  }
+}
